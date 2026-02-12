@@ -1,0 +1,42 @@
+This is a summary for the Final Exam content:
+
+Note: This document includes only essential commands and reminders. It assumes prior knowledge and skips detailed explanations.
+
+
+section 1: EC2 instance 
+
+- Always the first thing to do inside any EC2 instance is to update "Sudo apt update"
+
+- Install apache2 web server "Sudo apt install apache2" 
+
+- Location of where index.html is located "/var/www/html"
+
+- To connect to a private EC2 instance, you must have a public instance first.
+Then go to the root in the public instance, make a key with the .pem extension, and change the mode to 400 so only the owner has access "chmod 400 <key-name>.pem" After creating the key, just SSH into the private EC2 instance.
+
+
+Section 2: RDS database
+
+- Install the SQL client to access the database "sudo apt install mysql-client"
+
+- To connect to RDS, copy the endpoint and the port number, then enter "mysql -h <Endpoint> -P <port number> -u admin -p" 
+
+
+Section 3: EBS storage
+
+- List devices, partitions, mount points, and sizes “sudo lsblk"
+
+- List all the disk in your Linux system “sudo fdisk -l”
+
+- Check the file system type "sudo file -s <your drive-name>"
+
+- Format a drive with a specified file system type “sudo mkfs -t <file system> <name of the drive>” 
+
+- Mount the drive “sudo mount <drive name> <directory location and name>” 
+
+
+Section 4: EFS storage
+
+- Install the NFS client utilities  "sudo apt install nfs-common"
+
+- Mount the volume using "mount vi IP"
