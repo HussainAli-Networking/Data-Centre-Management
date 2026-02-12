@@ -12,4 +12,4 @@ It contains:
 - Monitoring and alerting setup (CloudWatch + SNS)
 - A final revision cheat sheet
 
-The content is aligned with the official course materials and practical exam structure.
+The content is aligned with the official course materials and practical exam structure Use it as a reference. Please refer to the official material.  
